@@ -93,7 +93,18 @@ print(''.join(r[i].upper() if (i % 2 != 0) else r[i] for i in k))
 
 #7 задача
 
+n = int(input())
+w = n*2-1
+a = [ ]
 
+for i in range(w):
+   a.append([])
+   for j in range(w):
+       d = n - abs(j+1-n) - abs(i+1-n)
+       a[i].append( '*' if d > 0 else " ")
+
+for l in a:
+    print(*l,sep='')
 
 #8 задача
 

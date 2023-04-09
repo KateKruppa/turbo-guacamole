@@ -59,7 +59,7 @@ print('вывод 4 задачи:',flatten(s))
 
 #5 задача
 
-e = [1,2,3,1,2,3,4,5]
+e = [1,2,3,1,2,3,4,5,1,2,3,4,6,7]
 exp: list[int] = []
 max = []
 
@@ -74,21 +74,16 @@ for i in range(len(e)-1):
         if e[i] < e[i+1]:
             exp.append(e[i])
 
-if len(exp) > len(max):
-    max = exp
-    exp = []
-
 if e[-1] > e[-2]:
-
+    exp.append(e[-1])
 
 
 if len(exp) > len(max):
     max = exp
     exp = []
 
-print(max)
 
-
+print('вывод 5 задачи: ',max)
 
 #6 задача
 
